@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/lshort/thai
+# catalog-date 2006-08-27 16:41:02 +0100
+# catalog-license pd
+# catalog-version 1.32
 Name:		texlive-lshort-thai
 Version:	1.32
 Release:	1
@@ -22,6 +28,7 @@ LaTeX2e.
 %doc %{_texmfdistdir}/doc/latex/lshort-thai/lsh132.pdf
 %doc %{_texmfdistdir}/doc/latex/lshort-thai/lsh132.zip
 %doc %{_texmfdistdir}/doc/latex/lshort-thai/readme
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -32,3 +39,5 @@ LaTeX2e.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
