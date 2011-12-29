@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-thai.doc.t
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 This is the Thai translation of the Short Introduction to
@@ -28,7 +26,6 @@ LaTeX2e.
 %doc %{_texmfdistdir}/doc/latex/lshort-thai/lsh132.pdf
 %doc %{_texmfdistdir}/doc/latex/lshort-thai/lsh132.zip
 %doc %{_texmfdistdir}/doc/latex/lshort-thai/readme
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -39,5 +36,3 @@ LaTeX2e.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
