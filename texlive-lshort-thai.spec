@@ -6,7 +6,7 @@
 # catalog-version 1.32
 Name:		texlive-lshort-thai
 Version:	1.32
-Release:	1
+Release:	2
 Summary:	Introduction to LaTeX in Thai
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/thai
