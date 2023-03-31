@@ -1,6 +1,6 @@
 Name:		texlive-lshort-thai
 Version:	55643
-Release:	1
+Release:	2
 Summary:	Introduction to LaTeX in Thai
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/thai
