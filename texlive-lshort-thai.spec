@@ -3,7 +3,7 @@ Version:	55643
 Release:	2
 Summary:	Introduction to LaTeX in Thai
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/lshort/thai
+URL:		https://www.ctan.org/tex-archive/info/lshort/thai
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-thai.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-thai.doc.r%{version}.tar.xz
