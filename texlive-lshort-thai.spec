@@ -1,32 +1,20 @@
-Name:		texlive-lshort-thai
-Version:	55643
-Release:	2
+%global tl_name lshort-thai
+%global tl_revision 55643
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	1.32
+Release:	%{tl_revision}.1
 Summary:	Introduction to LaTeX in Thai
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/info/lshort/thai
-License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-thai.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-thai.doc.r%{version}.tar.xz
+License:	pd
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-thai.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-thai.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-This is the Thai translation of the Short Introduction to
-LaTeX2e.
+This is the Thai translation of the Short Introduction to LaTeX2e.
 
-#-----------------------------------------------------------------------
-%files
-%doc %{_texmfdistdir}/doc/latex/lshort-thai/lsh132.pdf
-%doc %{_texmfdistdir}/doc/latex/lshort-thai/lsh132.zip
-%doc %{_texmfdistdir}/doc/latex/lshort-thai/readme
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar doc %{buildroot}%{_texmfdistdir}
